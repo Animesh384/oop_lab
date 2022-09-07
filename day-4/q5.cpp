@@ -8,7 +8,6 @@ class ab{
         a=b;
         b=temp;
     }
-
 };
 int main(){
     int a,b;
