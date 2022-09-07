@@ -19,8 +19,8 @@ class metercentimeter{
         cout<<"Enter centimert"<<endl;
         cin>>cen;
     }
-    void compare(feetinch &ob){
-        
+    void compare(metercentimeter &ob){
+
     }
 
 
