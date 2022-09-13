@@ -3,7 +3,6 @@ using namespace std;
 class book
 {
     string b_name;
-    string b_name;
     string auth;
     float price;
 
