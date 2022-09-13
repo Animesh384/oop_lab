@@ -31,5 +31,5 @@ int main(){
     cin>>n;
     book* ob=new book[n];
     display(ob,n);
-
+    return 0;
 }
