@@ -21,16 +21,8 @@ book::book()
     cin >> price;
     // std::__cxx11::string book::b_name
 }
-void book::set(){
-    cout << "b_name:";
-    cin >> b_name;
-    cout << "auth:";
-    cin >> auth;
-    cout << "price:";
-    cin >> price;
-}
 void display(book *book, int n)
-{
+{  
     for (int i = 0; i < n; i++)
     {
         cout << "b_name:" << book->b_name << endl;
@@ -46,6 +38,5 @@ int main()
     cin >> n;
     book *ob = new book[n];
     display(ob, n);
-    book ob1=*ob;
     return 0;
 }
