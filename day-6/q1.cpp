@@ -94,7 +94,13 @@ int main(){
     ob1.input();
     ob1.display();
     office ob2;
+    ob2.input();
+    ob2.display();
     regular ob3;
+    ob3.input();
+    ob3.display();
     casual ob4;
+    ob4.input();
+    ob4.display();
     return 0;
 }
