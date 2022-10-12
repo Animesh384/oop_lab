@@ -5,29 +5,46 @@ class shop{
     public:
     string cname;
     float price;
-
+    int aut;
+    shop(){
+        cin>>cname;
+        cin>>price;
+        cin>>aut;
+    }
+    void display(){
+        cout<<"car name:"<<cname<<endl;
+        cout<<"price:"<<price<<endl;
+        cout<<"automatic:"<<aut<<endl;
+    }
 };
-class TwoWheeler:public shop{
+class TwoWheeler: public shop{
     public:
     const int wheel=2;
+    void display(){
+        shop::display();
+        cout<<"wheel:"<<wheel<<endl;
+    } 
 };
-class Threewheeler:public shop{
+class Threewheeler: public shop{
     public:
     const int wheel=3;
+    void display(){
+        shop::display();
+        cout<<"wheel:"<<wheel<<endl;
+    } 
 };
-class four:public shop{
+class four: public shop{
     public:
     const int wheel=4;
-};
-
-class autom:public TwoWheeler,public Threewheeler{
-    bool var=1;
-};
-class manual:public TwoWheeler,public Threewheeler,public four{
-    bool var=0;
+    four(){
+    aut=2;
+    }
+    void display(){
+        shop::display();
+        cout<<"wheel:"<<wheel<<endl;
+    } 
 };
 int main(){
-    bool var;
-    cin>>var;
-    cout<<var;
+    TwoWheeler ob1;
+    ob1.display();
 }
