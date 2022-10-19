@@ -31,6 +31,16 @@ void dist::input(int a,int b){
     f=a;i=b;
 }
 dist dist::operator+(dist ob){
+    int f1=f+ob.f;
+    int i1=i+ob.i;
+    while(i1>12){
+        i1-=12;
+        f++;
+    }
+    dist temp(f1,i1);
+    return temp;
+}
+dist dist::operator-(dist ob){
     int f1=f-ob.f;
     int i1=i-ob.i;
     while(i1<0){
@@ -48,6 +58,6 @@ int main(){
     ob2=ob+ob1;
     ob3=ob-ob1;
     ob2.display();
-    ob3.display();
+    ob3.display()
     return 0;
 }
