@@ -41,7 +41,7 @@ dist dist::operator+(dist ob){
     dist temp(f1,i1);
     return temp;
 }
-dist dist::operator+(int var){
+dist dist::operator+ (int var){
     int f1=f;
     int i1=i+var;
     while(i1>12){

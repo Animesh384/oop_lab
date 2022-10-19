@@ -7,7 +7,11 @@ class postpree{
         cout<<"enter value i j:"<<endl;
         cin>>i>>j;
     }
-    void operator ++(){
+    void operator++(){
+        i++;
+        j++;
+    }
+    void operator++(int){
         i++;
         j++;
     }
@@ -18,6 +22,8 @@ class postpree{
 int main(){
     postpree ob;
     ++ob;
-    ob.display();1
+    ob.display();
+    ob++;
+    ob.display();
     return 0;
 }
