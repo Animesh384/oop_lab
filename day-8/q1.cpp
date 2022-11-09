@@ -9,7 +9,7 @@ class dist{
     dist(int a,int b);
     void input(int a,int b);
     dist operator +(dist ob);
-    dist operator +(int var);
+    dist operator +(int);
     dist operator -(dist ob);
     void display();
 };
@@ -41,7 +41,7 @@ dist dist::operator+(dist ob){
     dist temp(f1,i1);
     return temp;
 }
-dist dist::operator+ (int var){
+dist dist::operator+(int var){
     int f1=f;
     int i1=i+var;
     while(i1>12){
@@ -70,7 +70,7 @@ int main(){
     ob3=ob-ob1;
     ob2.display();
     ob3.display();
-    ob2=ob1+4;
+    ob2=ob1+9;
     ob2.display();
     return 0;
 }
